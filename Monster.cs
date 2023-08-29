@@ -8,10 +8,15 @@ namespace SpartaDungeonBattle
 {
     internal class Monster
     {
-        private int Level;
-        private string Name;
-        private int Attack;
-        private int HP;
+        public int Level { get; private set; }
+        public string Name { get; private set; }
+        public int Attack { get; private set; }
+        public int HP { get; private set; }
+
+        /// <summary>
+        /// 필요에 따라 편집
+        /// </summary>
+        public Monster() { }
 
         public event Action<Character> OnHit;
 
